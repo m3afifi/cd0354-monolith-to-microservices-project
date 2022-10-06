@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 RUN npm i --force
-RUN npm audit fix --force
+RUN npm audit fix
 RUN npm ci
 # Bundle app source
 COPY . .
