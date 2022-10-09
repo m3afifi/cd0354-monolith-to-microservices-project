@@ -25,7 +25,9 @@ script:
   - docker tag udagram-frontend m3afifi/udagram-frontend
 
 after_success:
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo $DOCKER_PASSWORD #| docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo $DOCKER_USERNAME 
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD docker.io
   - docker push m3afifi/udagram-api-feed
   - docker push m3afifi/udagram-api-user
   - docker push m3afifi/reverseproxy
