@@ -15,7 +15,7 @@ spec:
         app: udagram-api-feed
     spec:
       containers:
-      - name: udagram-api-feed
+      - name: udagram-api-feed:v5
         image: m3afifi/udagram-api-feed:v5
         ports:
         - containerPort: 8080

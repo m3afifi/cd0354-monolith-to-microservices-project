@@ -15,7 +15,7 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - name: udagram-frontend
+      - name: udagram-frontend:v5
         image: m3afifi/udagram-frontend:v5
         ports:
         - containerPort: 8100
