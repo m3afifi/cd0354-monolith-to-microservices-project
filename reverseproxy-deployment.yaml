@@ -15,7 +15,7 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - name: reverseproxy
+      - name: reverseproxy:v5
         image: m3afifi/reverseproxy:v5
         ports:
         - containerPort: 80

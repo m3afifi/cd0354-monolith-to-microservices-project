@@ -15,7 +15,7 @@ spec:
         app: udagram-api-user
     spec:
       containers:
-      - name: udagram-api-user
+      - name: udagram-api-user:v5
         image: m3afifi/udagram-api-user:v5
         ports:
         - containerPort: 8080
