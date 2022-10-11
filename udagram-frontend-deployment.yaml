@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: m3afifi/udagram-frontend:v4
+        image: m3afifi/udagram-frontend:v5
         ports:
         - containerPort: 8100
