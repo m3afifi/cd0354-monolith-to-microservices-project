@@ -26,8 +26,8 @@ script:
 
 after_success:
   - echo "$DOCKER_USERNAME"
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  # - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD" docker.io
+  # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD docker.io
   - docker push m3afifi/udagram-api-feed:v5
   - docker push m3afifi/udagram-api-user:v5
   - docker push m3afifi/reverseproxy:v5
