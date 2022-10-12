@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: ConfigMap
 data:
+  POSTGRES_USERNAME: postgres
+  POSTGRES_PASSWORD: postgres
   POSTGRES_HOST: udagram-dev.cfkkxj16l4tv.us-west-2.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: udagram-497271516629-dev
   AWS_REGION: us-west-2
   AWS_PROFILE: default
   JWT_SECRET: testing
-  URL: http://ad5476a229b4c45ae97f42f06a984e53-1122983105.us-west-2.elb.amazonaws.com
+  URL: acbfe31bd75d64df1807dad840efcc1f-1867859208.us-west-2.elb.amazonaws.com
 metadata:
   name: env-config
