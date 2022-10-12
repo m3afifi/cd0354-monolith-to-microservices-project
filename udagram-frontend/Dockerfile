@@ -5,9 +5,9 @@ WORKDIR /usr/src/app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
-RUN npm i -D typescript@3.5 --force
-RUN npm i --force
-RUN npm audit fix
+# RUN npm i -D typescript@3.5 --force
+# RUN npm i --force
+# RUN npm audit fix
 RUN npm ci
 # Bundle app source
 COPY . .

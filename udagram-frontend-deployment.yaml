@@ -15,7 +15,10 @@ spec:
         app: udagram-frontend
     spec:
       containers:
-      - name: udagram-frontend:v5
-        image: m3afifi/udagram-frontend:v5
+      - name: udagram-frontend
+        image: m3afifi/udagram-frontend:v7
         ports:
         - containerPort: 8100
+        envFrom:
+        - configMapRef:
+            name: env-config
