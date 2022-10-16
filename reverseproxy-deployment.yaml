@@ -16,11 +16,13 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: m3afifi/reverseproxy:v6
+        image: m3afifi/reverseproxy:v7
         ports:
         - containerPort: 80
         resources:
           limits:
             cpu: 500m
+            memory: "64Mi"
           requests:
             cpu: 200m
+            memory: "128Mi"
