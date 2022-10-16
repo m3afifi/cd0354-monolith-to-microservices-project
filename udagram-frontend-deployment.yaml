@@ -16,14 +16,16 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: m3afifi/udagram-frontend:v7
+        image: m3afifi/udagram-frontend:v8
         ports:
         - containerPort: 8100
         resources:
           limits:
             cpu: 500m
+            memory: "64Mi"
           requests:
             cpu: 200m
+            memory: "128Mi"
         envFrom:
         - configMapRef:
             name: env-config

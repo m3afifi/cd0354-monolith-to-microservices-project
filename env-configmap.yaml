@@ -3,7 +3,7 @@ kind: ConfigMap
 data:
   POSTGRES_USERNAME: postgres
   POSTGRES_PASSWORD: postgres
-  POSTGRES_HOST: udagram-dev.cfkkxj16l4tv.us-west-2.rds.amazonaws.com
+  POSTGRES_HOST: udagram-dev.cgjatkjq4gk0.us-west-2.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: udagram-497271516629-dev
   AWS_REGION: us-west-2
